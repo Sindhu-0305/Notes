@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="calendar.jpg">
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>Your Scribblings</h2>
+    </div>
+
+    <div class="container">
+        <div class="container-body">
+            
+            <button class="btn" onclick="delbook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="popup">
+        <h3>Notes</h3>
+        <br>
+        <form>
+            <input type="text" placeholder="Add Title" id="title">
+            <input type="text" placeholder="Add Date" id="author">
+            <textarea placeholder="Short Description" id="desc"></textarea>
+            <button id="addbook">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    <button class="addbtn" id="newbtn">+</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

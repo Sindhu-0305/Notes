@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: lightcoral;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-body {
+    background-color: black;
+    width: 25%;
+    height: 25%;
+    color: white;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 10px;
+    /*to make border less sharper*/
+    display: inline-block;
+    /*to make boxes or objects occur in same line rather than one after/down the other*/
+    vertical-align: top;
+    /*to make the subject appear at top if it actually appears at the bottom*/
+}
+
+.container-body h3 {
+    color: lightcoral;
+}
+
+.btn {
+    background-color: lightcoral;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.addbtn {
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: lightcoral;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    color: black;
+    border: none;
+    font-size: x-large;
+}
+
+.overlay {
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    position: fixed;
+    /*the things set as fixed stay in a fixed position even if the page gets scrolled*/
+    display: none;
+}
+
+.popup {
+    background-color: lightcoral;
+    width: 30%;
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    /*the things appears over the other thing like popup*/
+    z-index: 3;
+    right: 30%;
+    bottom: 30%;
+    display: none;
+}
+
+.popup input {
+    background: transparent;
+    /*generally, the background of the input tag is white setting it transparent removes the white-box*/
+    border: none;
+    /*removes the border line that appears*/
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: solid black 2px;
+    /*to only have a border at the bottom f a input kinda thing ex:_________*/
+    width: 100%;
+    /*to make a particular input input thing entire to the width of the popup-box*/
+}
+
+.popup textarea {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    border: solid black 2px;
+    width: 100%;
+}
+
+.popup input::placeholder {
+    color: black;
+    /*to change the input text color of the placeholder text*/
+}
+
+.popup textarea::placeholder {
+    color: black
+}
+
+.popup button {
+    background-color: black;
+    padding-left: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+    border: none;
+    margin-top: 5px;
+}
+
+.popup input:focus {
+    outline: none;
+    /*to remove the border like thing that appears over the input thing when the input thing is clicked*/
+}
+
+.popup textarea:focus {
+    outline: none;
+}
